@@ -11,6 +11,15 @@ body {
     margin: 0;
 }
 
+div.horas {
+    transform: translateY(-40px);
+}
+
+div.data {
+    transform: translateY(-50px);
+
+}
+
 main {
     background-color: white;
     color: #402319;
@@ -22,6 +31,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 7px 7px 7px #40231983;
 }
 
 div {
