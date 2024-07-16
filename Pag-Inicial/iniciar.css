@@ -12,17 +12,42 @@ body {
 }
 
 div.horas {
-    transform: translateY(-40px);
+    display: flex;
+    transform: translateY(-10px);
 }
 
 div.data {
-    transform: translateY(-50px);
+    display: flex;
+    transform: translateY(-25px);
 
 }
 
+div.registrar {
+    display: flex;
+    transform: translateY(20px);
+}
+
+button {
+    display: flex;
+    width: 150px;
+    height: 70px;
+    font-size:30px;
+    font-weight: initial;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #dddddd;
+    background-image: linear-gradient(to right, #F2D5A0, #D9AB73, #A66249, #734230, #402319);
+}
+
+button:hover {
+    background-image: linear-gradient(to left,  #F2D5A0, #D9AB73, #A66249, #734230, #402319);
+}
+
 main {
-    background-color: white;
-    color: #402319;
+    background-image: linear-gradient(to left,  #F2D5A0, #D9AB73, #A66249, #734230, #402319);
+    color: white;
     height: 400px;
     width: 400px;
     padding: 10px;
@@ -35,8 +60,11 @@ main {
 }
 
 div {
-    transform: translateY(-100px);
     text-align: center;
     font-weight: bolder;
     font-size: 35px;
+}
+
+div.registro-ponto {
+    transform: translateY(-70px);
 }

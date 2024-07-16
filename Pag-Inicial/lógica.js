@@ -37,3 +37,9 @@
     setInterval(horaexata, 1000);
 
     horaexata();
+
+
+    function registrar() {
+
+        
+    }
