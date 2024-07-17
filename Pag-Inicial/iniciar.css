@@ -29,6 +29,8 @@ div.registrar {
 
 button {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 70px;
     font-size:30px;
@@ -37,12 +39,31 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    background-color: #dddddd;
-    background-image: linear-gradient(to right, #F2D5A0, #D9AB73, #A66249, #734230, #402319);
+    background-color: white;
+    background-image: linear-gradient(to right,  #734230 ,#A66249);
 }
 
 button:hover {
-    background-image: linear-gradient(to left,  #F2D5A0, #D9AB73, #A66249, #734230, #402319);
+    background-image: linear-gradient(to left, #F2D5A0, #734230);
+}
+
+button.animate {
+    animation: clickEffect 0.5s ease-in-out;
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);     /* Estado inicial, sem escala */
+        background-color: white;    /* Cor inicial */
+    }
+    50% {
+        transform: scale(1.1);    /* Expande ligeiramente */
+        background-color: #D9AB73;   /* Cor no meio da animação */
+    }
+    100% {
+        transform: scale(1);    /* Retorna ao estado inicial */
+        background-color: white;     /* Cor final */
+    }
 }
 
 main {

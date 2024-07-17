@@ -40,6 +40,10 @@
 
 
     function registrar() {
+        const btn = document.querySelector('button#registrar-btn');
+        btn.classList.add('animate');     // Adiciona a classe 'animate' ao botão
 
-        
+        setTimeout(() => {
+            btn.classList.remove('animate');    // remove a classe 'animate' após 500 mlls
+        }, 500);    //Duração da animação em millisegundos
     }
