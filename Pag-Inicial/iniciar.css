@@ -27,6 +27,20 @@ div.registrar {
     transform: translateY(20px);
 }
 
+div.registro-dos-pontos {
+    display: flex; /* Alinha os elementos filhos em uma linha horizontal */
+    flex-direction: row; /* Define a direção do alinhamento como horizontal (linha) */
+    justify-content: space-between; /* Distribui o espaço uniformemente entre os elementos filhos */
+    width: 50%; /* Define a largura do contêiner como 50% do contêiner pai */
+}
+
+.registrodospontos1, .registrodospontos2, .registrodospontos3, .registrodospontos4 {
+    font-size: 13px;
+    display: flex;      /* faz com que as divs fiquem alinhadas horizontalmente */      
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente dentro de cada div */
+    align-items: center; /* Centraliza os elementos filhos verticalmente dentro de cada div */
+} 
+
 button {
     display: flex;
     justify-content: center;

@@ -40,10 +40,31 @@
 
 
     function registrar() {
+        
         const btn = document.querySelector('button#registrar-btn');
         btn.classList.add('animate');     // Adiciona a classe 'animate' ao botão
 
         setTimeout(() => {
             btn.classList.remove('animate');    // remove a classe 'animate' após 500 mlls
         }, 500);    //Duração da animação em millisegundos
+
+        let extrairdata = new Date();
+        let diadomes = extrairdata.getDate();
+        let mes = extrairdata.getMonth();
+        let copiames = mes
+        let ano = extrairdata.getFullYear();
+        let hora = extrairdata.getHours();
+        let minutos = extrairdata.getMinutes();
+        let seg = extrairdata.getSeconds();
+
+        let rp1 = document.querySelector('div.registrodospontos1')
+        let rp2 = document.querySelector('div.registrodospontos2')
+        let rp3 = document.querySelector('div.registrodospontos3')
+        let rp4 = document.querySelector('div.registrodospontos4')
+
+        rp1.innerText = (`23:30`)
+        rp2.innerText = (`23:30`)
+        rp3.innerText = (`23:30`)
+        rp4.innerText = (`23:30`)
+
     }
