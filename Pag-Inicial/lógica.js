@@ -4,7 +4,7 @@
         let extrairdata = new Date();
         let diadomes = extrairdata.getDate();
         let mes = extrairdata.getMonth();
-        let copiames = mes
+        let copiames = mes;
         let ano = extrairdata.getFullYear();
         let hora = extrairdata.getHours();
         let minutos = extrairdata.getMinutes();
@@ -38,6 +38,17 @@
 
     horaexata();
 
+    cont = 0;
+
+        let rp1 = document.querySelector('div.registrodospontos1');
+        let rp2 = document.querySelector('div.registrodospontos2');
+        let rp3 = document.querySelector('div.registrodospontos3');
+        let rp4 = document.querySelector('div.registrodospontos4');
+
+        rp1.innerText = ('Entrada')
+        rp2.innerText = ('Saída')
+        rp3.innerText = ('Entrada')
+        rp4.innerText = ('Saída')
 
     function registrar() {
         
@@ -51,20 +62,45 @@
         let extrairdata = new Date();
         let diadomes = extrairdata.getDate();
         let mes = extrairdata.getMonth();
-        let copiames = mes
+        let copiames = mes;
         let ano = extrairdata.getFullYear();
         let hora = extrairdata.getHours();
         let minutos = extrairdata.getMinutes();
         let seg = extrairdata.getSeconds();
 
-        let rp1 = document.querySelector('div.registrodospontos1')
-        let rp2 = document.querySelector('div.registrodospontos2')
-        let rp3 = document.querySelector('div.registrodospontos3')
-        let rp4 = document.querySelector('div.registrodospontos4')
+        let rp1 = document.querySelector('div.registrodospontos1');
+        let rp2 = document.querySelector('div.registrodospontos2');
+        let rp3 = document.querySelector('div.registrodospontos3');
+        let rp4 = document.querySelector('div.registrodospontos4');
+        
+        if (hora < 10) {
+            hora = '0' + hora
+        }
+        if (minutos < 10) {
+            minutos = '0' + minutos
+        }
+        if (seg < 10) {
+            seg = '0' + seg
+        }
 
-        rp1.innerText = (`23:30`)
-        rp2.innerText = (`23:30`)
-        rp3.innerText = (`23:30`)
-        rp4.innerText = (`23:30`)
 
+        cont += 1;
+
+        switch (cont) {
+            
+        case 1 :
+            rp1.innerText += (`\n${hora}:${minutos}`);
+            break;
+        case 2 : 
+            rp2.innerText += (`\n${hora}:${minutos}`);
+            break;
+        case 3 :
+            rp3.innerText += (`\n${hora}:${minutos}`);
+            break;
+        case 4 :
+            rp4.innerText += (`\n${hora}:${minutos}`);
+            cont = 0;
+            break;
+        }
+    
     }
