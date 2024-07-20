@@ -113,6 +113,7 @@ main {
     padding: 10px;
     border-radius: 200px;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -126,26 +127,10 @@ div {
 }
 
 div.registro-ponto {
-    transform: translateY(-20px);
+    transform: translateY(-40px);
     font-size: 40px;
     font-weight: bold;
     cursor: context-menu;
 }
 
-.aviso-animacao {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    transform: translateY(150px);
-    width: 50%;
-    border-radius: 15px;
-}
-
-.animacao-aviso , .animacao-aviso-01{
-    display: flex;
-    width: 55px;
-    height: 55px;
-}
 
