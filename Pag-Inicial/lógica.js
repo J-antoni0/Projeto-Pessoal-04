@@ -99,8 +99,17 @@
             break;
         case 4 :
             rp4.innerText += (`\n${hora}:${minutos}`);
-            cont = 0;
             break;
+        default:
+            
         }
-    
+
+        if (cont == 5) {
+            cont = 0
+            rp1.innerText = (`Entrada`);
+            rp2.innerText = (`Saída`);
+            rp3.innerText = (`Entrada`);
+            rp4.innerText = (`Saída`);
+
+        } 
     }
