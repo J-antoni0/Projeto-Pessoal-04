@@ -13,7 +13,7 @@ body {
 
 div.horas {
     display: flex;
-    transform: translateY(-10px);
+    transform: translateY(-25px);
     font-size: 25px;
     font-weight: 550;
     cursor: context-menu;
@@ -21,7 +21,7 @@ div.horas {
 
 div.data {
     display: flex;
-    transform: translateY(-10px);
+    transform: translateY(-25px);
     font-size: 25px;
     font-weight: 550;
     cursor: context-menu;
@@ -29,7 +29,7 @@ div.data {
 
 div.registrar {
     display: flex;
-    transform: translateY(40px);
+    transform: translateY(30px);
 }
 
 div.registro-dos-pontos {
@@ -37,7 +37,7 @@ div.registro-dos-pontos {
     flex-direction: row; /* Define a direção do alinhamento como horizontal (linha) */
     justify-content: space-between; /* Distribui o espaço uniformemente entre os elementos filhos */
     width: 80%; /* Define a largura do contêiner como 50% do contêiner pai */
-    transform: translateY(15px);
+    transform: translateY(-5px);
 }
 
 .registrodospontos1, .registrodospontos2, .registrodospontos3, .registrodospontos4 {
@@ -126,11 +126,24 @@ div {
     font-size: 35px;
 }
 
-div.registro-ponto {
-    transform: translateY(-40px);
-    font-size: 40px;
-    font-weight: bold;
+.registro-ponto {
+    display: flex;
+    transform: translateY(-50px);
     cursor: context-menu;
+}
+
+div.aviso {
+    display: none;    /* "none;" Faz com que o elemento suma da tela front*/  /*"dispay: block;" o elemento aparecera no front*/
+    position: absolute;
+    bottom: -150px;       /*Faz com que o elemento abaixe o Y ou suba*/
+    width: 80%;
+    background-color: #FFDD57;
+    color: #402319;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0px 0px 5px black;
 }
 
 

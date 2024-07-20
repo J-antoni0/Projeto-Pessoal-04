@@ -67,11 +67,12 @@
         let hora = extrairdata.getHours();
         let minutos = extrairdata.getMinutes();
         let seg = extrairdata.getSeconds();
-
+        
         let rp1 = document.querySelector('div.registrodospontos1');
         let rp2 = document.querySelector('div.registrodospontos2');
         let rp3 = document.querySelector('div.registrodospontos3');
         let rp4 = document.querySelector('div.registrodospontos4');
+        const aviso = document.querySelector('div.aviso')
         
         if (hora < 10) {
             hora = '0' + hora
@@ -100,16 +101,13 @@
         case 4 :
             rp4.innerText += (`\n${hora}:${minutos}`);
             break;
-        default:
-            
+        case 4 :
+            aviso.cla
+        default :
+            aviso.style.display = 'block';
+            setTimeout(() => {
+                aviso.style.display= 'none';
+            }, 2000);  // Oculta o aviso após 3 segundos
         }
 
-        if (cont == 5) {
-            cont = 0
-            rp1.innerText = (`Entrada`);
-            rp2.innerText = (`Saída`);
-            rp3.innerText = (`Entrada`);
-            rp4.innerText = (`Saída`);
-
-        } 
     }
